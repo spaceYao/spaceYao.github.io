@@ -124,6 +124,7 @@ export default function App() {
           <div className="hero-actions">
             <a className="button button-primary" href="#research">Explore the research</a>
             <a className="button button-secondary" href="#projects">View key projects</a>
+            <a className="button button-secondary" href="#team">Meet the team</a>
           </div>
         </div>
 
