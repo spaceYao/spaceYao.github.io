@@ -125,11 +125,6 @@ export default function App() {
             <a className="button button-primary" href="#research">Explore the research</a>
             <a className="button button-secondary" href="#projects">View key projects</a>
           </div>
-          <dl className="hero-stats">
-            <div><dt>209</dt><dd>publications</dd></div>
-            <div><dt>60</dt><dd>first / corresponding</dd></div>
-            <div><dt>3</dt><dd>active mission teams</dd></div>
-          </dl>
         </div>
 
         <aside className="profile-card" aria-label="Professor Zhonghua Yao profile">
@@ -137,7 +132,7 @@ export default function App() {
             <img src="/zhonghua-yao.png" alt="Prof. Zhonghua Yao speaking in front of a planetary image" />
           </div>
           <p className="profile-kicker">Professor Zhonghua Yao</p>
-          <h2>Associate Professor<br />Director of LSR</h2>
+          <h2>Director of LSR</h2>
           <p>Department of Earth and Planetary Sciences, The University of Hong Kong</p>
           <div className="profile-meta">
             <span>Ph.D. Space Physics · PKU</span>
@@ -230,7 +225,7 @@ export default function App() {
             <div>
               <p className="mini-label">Group lead</p>
               <h3>Zhonghua Yao</h3>
-              <strong>Associate Professor · Director of LSR</strong>
+              <strong>Director of LSR</strong>
               <p>Planetary magnetospheres, auroral processes, plasma dynamics, and space mission science.</p>
             </div>
           </article>
