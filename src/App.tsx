@@ -133,7 +133,7 @@ export default function App() {
             <img src="/zhonghua-yao.png" alt="Prof. Zhonghua Yao speaking in front of a planetary image" />
           </div>
           <p className="profile-kicker">Professor Zhonghua Yao</p>
-          <h2>Director of LSR</h2>
+          <h2>Director, Laboratory of Space Research</h2>
           <p>Department of Earth and Planetary Sciences, The University of Hong Kong</p>
           <div className="profile-meta">
             <span>Ph.D. Space Physics · PKU</span>
@@ -226,7 +226,7 @@ export default function App() {
             <div>
               <p className="mini-label">Group lead</p>
               <h3>Zhonghua Yao</h3>
-              <strong>Director of LSR</strong>
+              <strong>Director, Laboratory of Space Research</strong>
               <p>Planetary magnetospheres, auroral processes, plasma dynamics, and space mission science.</p>
             </div>
           </article>
