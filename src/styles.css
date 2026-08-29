@@ -37,9 +37,48 @@ img { max-width: 100%; }
 }
 .wordmark { font-size: 14px; font-weight: 820; letter-spacing: 0.11em; white-space: nowrap; }
 .wordmark span { color: #7652e7; }
+.header-right { display: flex; align-items: center; gap: clamp(18px, 2.8vw, 42px); min-width: 0; }
 nav { display: flex; gap: clamp(18px, 2.8vw, 42px); font-size: 13px; font-weight: 680; }
 nav a { padding: 8px 0; border-bottom: 1px solid transparent; }
 nav a:hover, nav a:focus-visible { border-color: #7652e7; }
+.language-toggle {
+  min-width: 56px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(8, 19, 46, 0.28);
+  border-radius: 999px;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  cursor: pointer;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
+}
+.language-toggle:hover, .language-toggle:focus-visible {
+  border-color: var(--ink);
+  color: white;
+  background: var(--ink);
+  outline: none;
+}
+
+.lang-zh {
+  font-family: Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+}
+.lang-zh h1,
+.lang-zh .section-heading h2,
+.lang-zh .exchange-intro h2,
+.lang-zh .team-heading h2,
+.lang-zh .research-card h3,
+.lang-zh .project-main h3,
+.lang-zh .community-list h3 { letter-spacing: -.035em; }
+.lang-zh .eyebrow,
+.lang-zh .section-number,
+.lang-zh .mini-label,
+.lang-zh .card-topline,
+.lang-zh .project-main > p,
+.lang-zh .project-tag { letter-spacing: .08em; text-transform: none; }
 
 .hero {
   min-height: 720px;
@@ -171,6 +210,7 @@ footer address { font-style: normal; }
 }
 @media (max-width: 900px) {
   .site-header { align-items: flex-start; }
+  .header-right { flex: 1; }
   nav { overflow-x: auto; padding-bottom: 3px; }
   nav a { white-space: nowrap; }
   .hero { grid-template-columns: 1fr; }
@@ -183,7 +223,9 @@ footer address { font-style: normal; }
 }
 @media (max-width: 680px) {
   .site-header { display: block; }
-  nav { margin-top: 14px; gap: 22px; }
+  .header-right { align-items: flex-start; gap: 12px; margin-top: 14px; }
+  nav { flex: 1; gap: 22px; }
+  .language-toggle { flex: 0 0 auto; }
   .hero { min-height: auto; padding-top: 54px; }
   h1 { font-size: 50px; }
   .profile-meta { flex-direction: column; }
