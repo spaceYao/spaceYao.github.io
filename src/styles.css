@@ -136,6 +136,23 @@ h1 {
 .profile-card h2 { margin: 0; font-size: clamp(27px, 3vw, 42px); line-height: 1.08; letter-spacing: -0.035em; }
 .profile-card > p:not(.profile-kicker) { margin: 16px 0; color: rgba(255,255,255,0.68); font-size: 14px; line-height: 1.5; }
 .profile-meta { display: flex; justify-content: space-between; gap: 12px; padding-top: 15px; border-top: 1px solid var(--line); color: rgba(255,255,255,0.58); font-size: 11px; }
+.profile-cv {
+  align-self: flex-start;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 1px solid rgba(171,236,255,.42);
+  color: var(--ice);
+  font-size: 11px;
+  font-weight: 780;
+  letter-spacing: .04em;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
+}
+.profile-cv:hover, .profile-cv:focus-visible {
+  border-color: var(--ice);
+  color: var(--ink);
+  background: var(--ice);
+  outline: none;
+}
 
 .section { padding: clamp(86px, 10vw, 150px) clamp(24px, 7vw, 112px); }
 .section-heading { display: grid; grid-template-columns: 1.35fr .65fr; gap: 18px 88px; margin-bottom: 72px; align-items: end; }

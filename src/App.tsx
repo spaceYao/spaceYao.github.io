@@ -28,6 +28,7 @@ const translations = {
       department: 'Department of Earth and Planetary Sciences, The University of Hong Kong',
       phd: 'Ph.D. Space Physics · PKU',
       honorary: 'Honorary Professor · UCL',
+      cv: 'Download full CV ↓',
     },
     research: {
       label: '01 / Research work',
@@ -156,6 +157,7 @@ const translations = {
       department: '香港大学地球与行星科学系',
       phd: '博士 · 空间物理 · 北京大学',
       honorary: '名誉教授 · 伦敦大学学院（UCL）',
+      cv: '下载完整简历 ↓',
     },
     research: {
       label: '01 / 研究工作',
@@ -316,10 +318,13 @@ export default function App() {
           <p className="profile-kicker">{t.profile.kicker}</p>
           <h2>{t.profile.title}</h2>
           <p>{t.profile.department}</p>
-            <div className="profile-meta">
-              <span>{t.profile.phd}</span>
-              <span>{t.profile.honorary}</span>
-            </div>
+          <div className="profile-meta">
+            <span>{t.profile.phd}</span>
+            <span>{t.profile.honorary}</span>
+          </div>
+          <a className="profile-cv" href="/Zhonghua_Yao_CV_August_2026.pdf" download>
+            {t.profile.cv}
+          </a>
         </aside>
       </section>
 
