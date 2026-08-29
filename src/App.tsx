@@ -132,8 +132,8 @@ const translations = {
     },
   },
   zh: {
-    pageTitle: '姚中华｜行星空间物理',
-    pageDescription: '香港大学空间研究实验室主任姚中华教授的学术主页。',
+    pageTitle: '尧中华｜行星空间物理',
+    pageDescription: '香港大学空间研究实验室主任尧中华教授的学术主页。',
     navLabel: '主导航',
     nav: ['研究工作', '知识交流', '重点项目', '团队成员'],
     toggleLabel: 'Switch to English',
@@ -141,13 +141,13 @@ const translations = {
     hero: {
       eyebrow: '行星空间物理 · 香港大学',
       title: '探索行星如何与太空相连。',
-      intro: '姚中华教授研究行星磁层、极光、等离子体动力学，以及塑造太阳系行星空间环境的基本物理过程。',
+      intro: '尧中华教授研究行星磁层、极光、等离子体动力学，以及塑造太阳系行星空间环境的基本物理过程。',
       actions: ['探索研究方向', '查看重点项目', '认识研究团队'],
     },
     profile: {
-      aria: '姚中华教授简介',
-      alt: '姚中华教授在行星图像前作报告',
-      kicker: '姚中华 教授',
+      aria: '尧中华教授简介',
+      alt: '尧中华教授在行星图像前作报告',
+      kicker: '尧中华 教授',
       title: '空间研究实验室主任',
       department: '香港大学地球与行星科学系',
       phd: '博士 · 空间物理 · 北京大学',
@@ -392,7 +392,7 @@ export default function App() {
             <img src="/zhonghua-yao.png" alt={t.profile.kicker} />
             <div>
               <p className="mini-label">{t.team.lead}</p>
-              <h3>{language === 'zh' ? '姚中华' : 'Zhonghua Yao'}</h3>
+              <h3>{language === 'zh' ? '尧中华' : 'Zhonghua Yao'}</h3>
               <strong>{t.team.leadTitle}</strong>
               <p>{t.team.leadResearch}</p>
             </div>
