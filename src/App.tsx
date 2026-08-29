@@ -27,7 +27,7 @@ const translations = {
       title: 'Director, Laboratory of Space Research',
       department: 'Department of Earth and Planetary Sciences, The University of Hong Kong',
       phd: 'Ph.D. Space Physics · PKU',
-      bsc: 'B.Sc. Physics · CNU',
+      honorary: 'Honorary Professor · UCL',
     },
     research: {
       label: '01 / Research work',
@@ -155,7 +155,7 @@ const translations = {
       title: '香港大学太空实验室主任',
       department: '香港大学地球与行星科学系',
       phd: '博士 · 空间物理 · 北京大学',
-      bsc: '学士 · 物理学 · 首都师范大学',
+      honorary: '名誉教授 · 伦敦大学学院（UCL）',
     },
     research: {
       label: '01 / 研究工作',
@@ -316,10 +316,10 @@ export default function App() {
           <p className="profile-kicker">{t.profile.kicker}</p>
           <h2>{t.profile.title}</h2>
           <p>{t.profile.department}</p>
-          <div className="profile-meta">
-            <span>{t.profile.phd}</span>
-            <span>{t.profile.bsc}</span>
-          </div>
+            <div className="profile-meta">
+              <span>{t.profile.phd}</span>
+              <span>{t.profile.honorary}</span>
+            </div>
         </aside>
       </section>
 
