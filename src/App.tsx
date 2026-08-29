@@ -8,6 +8,8 @@ const translations = {
   en: {
     pageTitle: 'Zhonghua Yao | Planetary Space Physics',
     pageDescription: 'Academic homepage of Prof. Zhonghua Yao, Director, Laboratory of Space Research at The University of Hong Kong.',
+    wordmark: ['YAO SPACE', 'GROUP'],
+    homeLabel: 'Yao Space Group home',
     navLabel: 'Primary navigation',
     nav: ['Research work', 'Knowledge exchange', 'Key projects', 'Team members'],
     toggleLabel: '切换至中文',
@@ -133,7 +135,9 @@ const translations = {
   },
   zh: {
     pageTitle: '尧中华｜行星空间物理',
-    pageDescription: '香港大学空间研究实验室主任尧中华教授的学术主页。',
+    pageDescription: '香港大学太空实验室主任尧中华教授的学术主页。',
+    wordmark: ['尧中华', '课题组'],
+    homeLabel: '尧中华课题组主页',
     navLabel: '主导航',
     nav: ['研究工作', '知识交流', '重点项目', '团队成员'],
     toggleLabel: 'Switch to English',
@@ -148,7 +152,7 @@ const translations = {
       aria: '尧中华教授简介',
       alt: '尧中华教授在行星图像前作报告',
       kicker: '尧中华 教授',
-      title: '空间研究实验室主任',
+      title: '香港大学太空实验室主任',
       department: '香港大学地球与行星科学系',
       phd: '博士 · 空间物理 · 北京大学',
       bsc: '学士 · 物理学 · 首都师范大学',
@@ -193,7 +197,7 @@ const translations = {
       missionLabel: '空间任务与天文台合作',
       timelineLabel: '知识交流里程碑',
       milestones: [
-        ['2026年至今', '香港大学空间研究实验室主任'],
+        ['2026年至今', '香港大学太空实验室主任'],
         ['2026', '天问四号任务科学核心组成员'],
         ['2024–2026', '亚洲—大洋洲地球科学学会（AOGS）行星科学分会主席'],
         ['2024年至今', '香港大学深圳研究院行星空间环境实验室主任'],
@@ -238,7 +242,7 @@ const translations = {
       label: '04 / 团队成员',
       title: '面向行星探测的协作型研究团队。',
       lead: '团队负责人',
-      leadTitle: '空间研究实验室主任',
+      leadTitle: '香港大学太空实验室主任',
       leadResearch: '行星磁层、极光过程、等离子体动力学与空间任务科学。',
       areas: [
         ['博士后研究人员', '行星等离子体、极光物理与空间任务数据分析'],
@@ -275,8 +279,8 @@ export default function App() {
   return (
     <main className={`lang-${language}`}>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Zhonghua Yao home">
-          <span>ZHONGHUA</span> YAO
+        <a className="wordmark" href="#top" aria-label={t.homeLabel}>
+          <span>{t.wordmark[0]}</span> {t.wordmark[1]}
         </a>
         <div className="header-right">
           <nav aria-label={t.navLabel}>
@@ -411,7 +415,7 @@ export default function App() {
 
       <footer>
         <div>
-          <a className="wordmark footer-mark" href="#top"><span>ZHONGHUA</span> YAO</a>
+          <a className="wordmark footer-mark" href="#top" aria-label={t.homeLabel}><span>{t.wordmark[0]}</span> {t.wordmark[1]}</a>
           <p>{t.footer.tagline}</p>
         </div>
         <address>{t.footer.department}<br />{t.footer.address}</address>
